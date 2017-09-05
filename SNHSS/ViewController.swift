@@ -8,7 +8,7 @@
 
 import UIKit
 
-var urlS = ["http://snowmobile-nh.com/trail-reports/bear-brook-state-park",
+var urlSA = ["http://snowmobile-nh.com/trail-reports/bear-brook-state-park",
             "http://snowmobile-nh.com/trail-reports/tower-hill",
             "http://snowmobile-nh.com/trail-reports/pawtuckaway-state-park",
             "https://www.facebook.com/snhss/",
@@ -16,6 +16,15 @@ var urlS = ["http://snowmobile-nh.com/trail-reports/bear-brook-state-park",
             "http://snhss:snhss@50.245.37.138:8092/cgi-bin/mjpg/video.cgi",
             "https://www.wunderground.com/q/zmw:03034.1.99999",
             "http://snowmobile-nh.com/our-club/join-the-club"
+]
+var urlS = ["http://snowmobile-nh.com/index.php/trail-reports/bear-brook-state-park",
+            "http://snowmobile-nh.com/index.php/trail-reports/tower-hill",
+            "http://snowmobile-nh.com/index.php/trail-reports/pawtuckaway-state-park",
+            "https://www.facebook.com/snhss/",
+            "http://snowmobile-nh.com/trail-reports/pawtuckaway-state-park",
+            "http://snhss:snhss@50.245.37.138:8092/cgi-bin/mjpg/video.cgi",
+            "https://www.wunderground.com/q/zmw:03034.1.99999",
+            "http://snowmobile-nh.com/index.php/our-club/join-the-club"
 ]
 var urlString = ["Trail Conditions",
             "Trail Conditions",
