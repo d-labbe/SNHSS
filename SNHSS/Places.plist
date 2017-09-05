@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>Clubhouse: Parking for members</string>
+		<key>description</key>
+		<string>73 Tower Hill Road, Candia NH 03034</string>
+		<key>latitude</key>
+		<real>43.049147</real>
+		<key>longitude</key>
+		<real>-71.36329499999999</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Bear Brook: Sled and ATV parking</string>
+		<key>description</key>
+		<string>435 Deerfield Rd, Allenstown, NH 03275</string>
+		<key>latitude</key>
+		<real>43.16139</real>
+		<key>longitude</key>
+		<real>-71.396957</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Pawtuckaway: Sled and ATV parking</string>
+		<key>description</key>
+		<string>128 Mountain Rd, Nottingham, NH 03290</string>
+		<key>latitude</key>
+		<real>43.077538</real>
+		<key>longitude</key>
+		<real>-71.171368</real>
+	</dict>
+</array>
+</plist>

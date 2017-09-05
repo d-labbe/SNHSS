@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SNHSS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="mainCollection" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="byM-DA-Xu9">
+                                <rect key="frame" x="0.0" y="80" width="375" height="587"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SLa-Lx-zhw">
+                                    <size key="itemSize" width="120" height="120"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collection_cell" id="4in-pv-GcL" customClass="myCollectionViewCell" customModule="SNHSS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Aa-Wc-eHy">
+                                                    <rect key="frame" x="15" y="10" width="90" height="90"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="cellLabel" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYR-QR-be6">
+                                                    <rect key="frame" x="0.0" y="99" width="120" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="cellLabel" destination="qYR-QR-be6" id="Yvz-qc-Zpg"/>
+                                            <outlet property="myImageCell" destination="6Aa-Wc-eHy" id="Xjb-A1-8Hq"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p6N-cv-bYv">
+                                <rect key="frame" x="0.0" y="24" width="375" height="53"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="snhssLeft" image="imgSNHSS" translatesAutoresizingMaskIntoConstraints="NO" id="4tI-UK-iLT">
+                                        <rect key="frame" x="25" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="coolImg" image="coolSNHSS" translatesAutoresizingMaskIntoConstraints="NO" id="CqZ-Vn-Id2">
+                                        <rect key="frame" x="97" y="3" width="180" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="snhssRight" image="imgSNHSS" translatesAutoresizingMaskIntoConstraints="NO" id="SbE-zr-r0Y">
+                                        <rect key="frame" x="301" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="MyCollectionView" destination="byM-DA-Xu9" id="Iff-A0-a5h"/>
+                        <outlet property="coolImg" destination="CqZ-Vn-Id2" id="Kwu-bV-fuE"/>
+                        <outlet property="snhssLeft" destination="4tI-UK-iLT" id="Zc3-X8-nPR"/>
+                        <outlet property="snhssRight" destination="SbE-zr-r0Y" id="Q8F-A9-2yb"/>
+                        <segue destination="3C1-fA-cVQ" kind="show" identifier="toWebPage" id="z6q-XC-0N8"/>
+                        <segue destination="QR5-zt-ORg" kind="show" identifier="toMapPage" id="CBU-EO-BpC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="66.400000000000006" y="36.431784107946029"/>
+        </scene>
+        <!--Web Page Controller-->
+        <scene sceneID="PfK-jh-jtN">
+            <objects>
+                <viewController id="3C1-fA-cVQ" customClass="webPageController" customModule="SNHSS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xRG-IA-did"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nkq-9T-mSJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EMc-1J-N2Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nde-QR-j94">
+                                <rect key="frame" x="0.0" y="52" width="375" height="615"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="3C1-fA-cVQ" id="g2t-Hl-bhJ"/>
+                                </connections>
+                            </webView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yhB-kJ-r1C">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="6sX-5g-LAc">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="geD-9k-7jq">
+                                            <connections>
+                                                <segue destination="CqY-zn-2nM" kind="unwind" identifier="exitWebPage" unwindAction="unwindSegueWithUnwindSegue:" id="hoQ-xm-0cf"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="webPageTItles" destination="6sX-5g-LAc" id="Uug-Zs-ARA"/>
+                        <outlet property="webPageTitle" destination="yhB-kJ-r1C" id="cal-DG-toK"/>
+                        <outlet property="webView" destination="nde-QR-j94" id="Nhp-k7-eye"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z8T-Go-Vih" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="CqY-zn-2nM" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="768.79999999999995" y="36.431784107946029"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="Q72-LO-kUy">
+            <objects>
+                <viewController id="QR5-zt-ORg" customClass="mapViewController" customModule="SNHSS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5bU-DE-udL"/>
+                        <viewControllerLayoutGuide type="bottom" id="om6-zW-biq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L7W-7H-XGC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VkI-hY-WYe">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Parking Lots" id="8MQ-HZ-1lg">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="WxH-ui-DYA">
+                                            <connections>
+                                                <segue destination="Jil-ET-h80" kind="unwind" unwindAction="unwindSegueWithUnwindSegue:" id="KU6-ff-4V1"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OFP-bx-bjV">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </mapView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6P6-ju-tci">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Locate Me" id="3Ti-pn-F0b">
+                                        <connections>
+                                            <action selector="locateMe:" destination="QR5-zt-ORg" id="25f-X5-ov4"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Asw-49-9hl"/>
+                                    <barButtonItem image="zoom_in" id="IrG-dV-TDT">
+                                        <connections>
+                                            <action selector="zoomIn:" destination="QR5-zt-ORg" id="sPB-cm-M2E"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem image="zoom_out" id="SFX-DY-XeE">
+                                        <connections>
+                                            <action selector="zoomOut:" destination="QR5-zt-ORg" id="ooc-5u-RXk"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="c8h-uM-ZKg"/>
+                                    <barButtonItem title="Satellite" id="EI7-GN-PXL">
+                                        <connections>
+                                            <action selector="setMapType:" destination="QR5-zt-ORg" id="jTp-8X-3uf"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VkI-hY-WYe" firstAttribute="top" secondItem="5bU-DE-udL" secondAttribute="bottom" id="5aM-cW-vs8"/>
+                            <constraint firstAttribute="trailing" secondItem="VkI-hY-WYe" secondAttribute="trailing" id="BCf-N3-bxa"/>
+                            <constraint firstItem="VkI-hY-WYe" firstAttribute="leading" secondItem="L7W-7H-XGC" secondAttribute="leading" id="I4f-kM-XZw"/>
+                            <constraint firstItem="OFP-bx-bjV" firstAttribute="trailing" secondItem="6P6-ju-tci" secondAttribute="trailing" id="I7I-dK-dPS"/>
+                            <constraint firstItem="OFP-bx-bjV" firstAttribute="leading" secondItem="VkI-hY-WYe" secondAttribute="leading" id="VPg-kV-sR3"/>
+                            <constraint firstItem="OFP-bx-bjV" firstAttribute="trailing" secondItem="VkI-hY-WYe" secondAttribute="trailing" id="o5u-aO-AO5"/>
+                            <constraint firstItem="OFP-bx-bjV" firstAttribute="bottom" secondItem="6P6-ju-tci" secondAttribute="bottom" id="ocr-hB-8J9"/>
+                            <constraint firstItem="OFP-bx-bjV" firstAttribute="bottom" secondItem="om6-zW-biq" secondAttribute="top" id="pbu-DY-bNW"/>
+                            <constraint firstItem="OFP-bx-bjV" firstAttribute="leading" secondItem="6P6-ju-tci" secondAttribute="leading" id="rnf-ez-hEz"/>
+                            <constraint firstItem="OFP-bx-bjV" firstAttribute="top" secondItem="VkI-hY-WYe" secondAttribute="bottom" id="u2e-cn-neN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapPage" destination="OFP-bx-bjV" id="LeO-sD-Zlk"/>
+                        <outlet property="mapPageTitle" destination="VkI-hY-WYe" id="l9e-RU-zXg"/>
+                        <outlet property="mapTypeTitle" destination="EI7-GN-PXL" id="vjr-ar-XPF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vbp-SG-Vbc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Jil-ET-h80" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1503.2" y="40.929535232383813"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="coolSNHSS" width="342" height="95"/>
+        <image name="imgSNHSS" width="60" height="60"/>
+        <image name="zoom_in" width="24" height="24"/>
+        <image name="zoom_out" width="24" height="24"/>
+    </resources>
+</document>
